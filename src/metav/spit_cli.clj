@@ -48,7 +48,7 @@
   should exit (with an error message, and optional ok status), or a map
   indicating the action the program should take and the options provided."
   [args]
-  (prn "cli-options" cli-options args)
+  ;(prn "cli-options" cli-options args)
   (let [{:keys [options arguments errors summary] :as opts} (parse-opts args cli-options)]
     ;(prn opts)
     (cond
